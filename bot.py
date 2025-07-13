@@ -30,7 +30,7 @@ async def myid(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f"🆔 Tu ID es: {update.effective_user.id}")
 
 # 🚀 Inicia el bot
-app = ApplicationBuilder().token("8169621220:AAEkT35uQe5aN9apF7EF1P80mujh7pe5I4o").build()  # ← Reemplaza tu token real
+app = ApplicationBuilder().token("8169621220:AAFHhmoFLw0F5k4ZdIjifg3hWAcG1Rn-bmw").build()  # ← Reemplaza tu token real
 app.add_handler(CommandHandler("generar", generar))
 app.add_handler(CommandHandler("myid", myid))
 app.run_polling()
